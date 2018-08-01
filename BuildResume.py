@@ -33,7 +33,9 @@ def main(f):
     os.system("mv "+j["filename"]+" template/")
     os.chdir("template")
     os.system("xelatex -synctex=1 -interaction=nonstopmode {0}".format(j['filename']))
-    #os.system("cp {0} ../product/".format(j["filename"][:-4]+'.pdf'))
+    os.system("mv {0} ..".format(j["filename"][:-4]+'.pdf'))
+    os.system("mv {0} ..".format(j["filename"][:-4]+'.tex'))
+    os.system("rm {0}".format(j["filename"][:-4]+'.*'))
 
 if __name__ == '__main__':
     main(sys.argv[1])

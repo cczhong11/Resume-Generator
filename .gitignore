@@ -1,6 +1,4 @@
-ProjectJson/
 .DS_Store
-*.json
 *.aux
 *.out
 *.log

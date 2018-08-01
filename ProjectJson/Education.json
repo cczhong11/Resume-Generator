@@ -1,0 +1,18 @@
+[{
+    "id":"all",
+    "name": "Carnegie Mellon University (CMU)",
+    "date": "Aug. 2017 - May 2019",
+    "place": "Pittsburgh, PA",
+    "title": "Master of Science in Information Networking; GPA: 3.95/4.0",
+    "tech": ["Related Courses"],
+    "bullet":  ["Related Courses: Intro to Computer Systems, Cloud Computing, Search Engine, Distributed System, Artificial Intelligence, Practical Data Science"]
+},
+{
+    "id":"all",
+    "name": "Southeast University (SEU)",
+    "date": "Aug. 2013 - June 2017",
+    "place": "Nanjing, China",
+    "title": "Bachelor of Engineering in Information Engineering; GPA: 3.89/4.0 (91.64/100)",
+    "tech": ["Related Courses"],
+    "bullet": ["Related Courses: Data Structures and Algorithm, Database System, Machine Learning,  Computer Architecture, BigData, Computer Vision, Computer Network"]
+}]

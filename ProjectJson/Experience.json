@@ -1,0 +1,19 @@
+[
+{
+    "id":"all",
+    "name": "Walmart Inc",
+    "date": "May - Aug. 2018",
+    "place": "Bentonville, AR",
+    "title": "Software Engineer Intern in Sam's Club Cloud infrastructure team",
+    "tech": ["Java Spring", "Azure", "CosmosDB","ReactJS","Event Hubs","Functions","Web App","RESTful API"],
+    "bullet": ["Developed Azure CosmosDB resource auto scaling system both backend and frontend with Java Spring Framework and ReactJS, reducing 70\\% cost by only using high capacity in scheduled time.", "Designed and Implemented RESTful API and highly scalable backend that can manage autoscaling of 1000's of CosmosDB instances with Azure Web App, CosmosDB, Functions, Event Hubs.","Won third prize in Walmart Codeception Hackathon with implementing Java backend for a location focused social media platform for Walmart associates."]
+},
+{
+    "id":"all",
+    "name": "Intel Asia-Pacific Research \\& Development Ltd.",
+    "date": "July - Dec. 2016",
+    "place": "Shanghai, China",
+    "title": "Software Development and Validation Intern",
+    "tech": ["C\\#","Python","Node.js","HTML5","Docker"],
+    "bullet": ["Developed and upgraded test scripts and architectures for LPSS(Low Power Sub-System) testing code.", "Built Python automation tool to accelerate average testing time by 20\\%.", "Collaborated with security team to develop a demo for proof of concept of secure container with Node.js, HTML5 and Docker and helped team win the customer."]
+}]

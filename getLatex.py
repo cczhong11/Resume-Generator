@@ -4,8 +4,7 @@ import json
 def getProLatex(namelist,full=True):
     rs = ""
     d = {}
-    for filename in ["ProjectJson/cloud.json","ProjectJson/ds.json","ProjectJson/searchengine.json","ProjectJson/other.json",]:
-        print(filename)
+    for filename in ["ProjectJson/Project.json"]:
         with open(filename, 'r') as f:
             obj = json.load(f)
         for i in obj:
@@ -33,7 +32,7 @@ def getProLatex(namelist,full=True):
 
 
 def getSkillLatex(name):
-    with open("ProjectJson/skillset.json", 'r') as f:
+    with open("ProjectJson/SkillSet.json", 'r') as f:
         obj = json.load(f)
     rs = "\\begin{itemize}\n"
     for i in obj:
@@ -72,7 +71,7 @@ def getEductionLatex(ref):
 
 def getExperience(ref):
     rs = ""
-    for filename in ["ProjectJson/intern.json"]:
+    for filename in ["ProjectJson/Experience.json"]:
         with open(filename, 'r') as f:
             obj = json.load(f)
         for i in obj:
