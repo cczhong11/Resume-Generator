@@ -92,6 +92,3 @@ def getExperience(ref):
             template = "\\datedsubsection{{\\textbf{{{0}}}}}{{{1}}} \n\\role{{{2}}} {{\\hfill   {3}}}\n\\begin{{itemize}}\n{4}\\end{{itemize}}\n".format(name, place,title,date,bull)
             rs+= template
     return rs
-
-#print(getProLatex("intern.json"))
-print(getSkillLatex("skillset.json"))

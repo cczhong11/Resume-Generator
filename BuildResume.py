@@ -6,7 +6,7 @@
 import json
 import os
 import sys
-from getLatex import *
+from GetLatex import *
 
 def build(filename,js):
     with open(filename,'w') as f:
@@ -30,10 +30,10 @@ def build(filename,js):
 def main(f):
     j = json.load(open(f))
     build(j["filename"],j)
-    os.system("mv "+j["filename"]+" /Users/tczhong/Dropbox/3work工作/me/fulltime/template/")
-    os.chdir("/Users/tczhong/Dropbox/3work工作/me/fulltime/template")
+    os.system("mv "+j["filename"]+" template/")
+    os.chdir("template")
     os.system("xelatex -synctex=1 -interaction=nonstopmode {0}".format(j['filename']))
-    os.system("cp {0} ../product/".format(j["filename"][:-4]+'.pdf'))
+    #os.system("cp {0} ../product/".format(j["filename"][:-4]+'.pdf'))
 
 if __name__ == '__main__':
     main(sys.argv[1])
