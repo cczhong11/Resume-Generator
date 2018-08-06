@@ -1,13 +1,17 @@
-# build tex
-# complie tex 
-# xelatex -synctex=1 -interaction=nonstopmode "Tianchen Zhong_CMU_Data Scentist Internship".tex
-# cp to dir with name+time
-
+'''
+This file will write and compile resume latex file.
+'''
 import json
 import os
 import sys
 from GetLatex import *
 
+'''
+Read init tex file and add content from pre-defined json 
+args:
+    filename:  filename defined your resume file
+    js: resume json object 
+'''
 def build(filename,js):
     with open(filename,'w') as f:
         with open("init.tex") as fin:
@@ -27,15 +31,23 @@ def build(filename,js):
                 else:
                     f.write(l)
 
-def main(f):
-    j = json.load(open(f))
-    build(j["filename"],j)
-    os.system("mv "+j["filename"]+" template/")
+'''
+main program
+
+Read resume object, copy to template folder, use latex to build and compile it. Then delete some temp files and move your tex and pdf to root folder.
+
+args:
+    file:  json file defines your resume.
+'''
+def main(file):
+    jobj = json.load(open(file))
+    build(jobj["filename"],jobj)
+    os.system("mv "+jobj["filename"]+" template/")
     os.chdir("template")
-    os.system("xelatex -synctex=1 -interaction=nonstopmode {0}".format(j['filename']))
-    os.system("mv {0} ..".format(j["filename"][:-4]+'.pdf'))
-    os.system("mv {0} ..".format(j["filename"][:-4]+'.tex'))
-    os.system("rm {0}".format(j["filename"][:-4]+'.*'))
+    os.system("xelatex -synctex=1 -interaction=nonstopmode {0}".format(jobj['filename']))
+    os.system("mv {0} ..".format(jobj["filename"][:-4]+'.pdf'))
+    os.system("mv {0} ..".format(jobj["filename"][:-4]+'.tex'))
+    os.system("rm {0}".format(jobj["filename"][:-4]+'.*'))
 
 if __name__ == '__main__':
     main(sys.argv[1])

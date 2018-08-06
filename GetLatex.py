@@ -1,6 +1,10 @@
 import json
 
-
+'''
+Function to get project resume tex.
+args:
+    namelist: a list contains all Project name
+'''
 def getProLatex(namelist,full=True):
     rs = ""
     d = {}
@@ -31,6 +35,12 @@ def getProLatex(namelist,full=True):
     return rs
 
 
+'''
+Function to get skill resume tex.
+args:
+    name: your skill id
+'''
+
 def getSkillLatex(name):
     with open("ProjectJson/SkillSet.json", 'r') as f:
         obj = json.load(f)
@@ -45,8 +55,12 @@ def getSkillLatex(name):
     rs+="\\end{itemize}\n"
     return rs
 
-
-def getEductionLatex(ref):
+'''
+Function to get Education resume tex.
+args:
+    education: your education id
+'''
+def getEductionLatex(education):
     rs = ""
     for filename in ["ProjectJson/Education.json"]:
         with open(filename, 'r') as f:
@@ -58,7 +72,7 @@ def getEductionLatex(ref):
             title = i['title']
             tech = i['tech']
             bull = ""
-            if i["id"]!= ref:
+            if i["id"]!= education:
                 continue
             for s in i["bullet"]:
                 bull += "\\item{{{0}}}\n".format(s)
@@ -69,7 +83,12 @@ def getEductionLatex(ref):
             rs+= template
     return rs
 
-def getExperience(ref):
+'''
+Function to get Experience resume tex.
+args:
+    experience: your Experience id
+'''
+def getExperience(experience):
     rs = ""
     for filename in ["ProjectJson/Experience.json"]:
         with open(filename, 'r') as f:
@@ -81,7 +100,7 @@ def getExperience(ref):
             title = i['title']
             tech = i['tech']
             bull = ""
-            if i["id"]!= ref:
+            if i["id"]!= experience:
                 continue
             for s in i["bullet"]:
                 bull += "\\item{{{0}}}\n".format(s)
