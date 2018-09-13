@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
-\LoadClass[11pt]{article}
+\LoadClass[13pt]{article}
 
 % disable indent globally
 \setlength{\parindent}{0pt}
@@ -54,13 +54,13 @@
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*0.5}{*0.5}
+\titlespacing*{\section}{0cm}{*1.5}{*1.5}
 
 \titleformat{\subsection}
   {\large\raggedright}
   {}{0em}
   {}
-\titlespacing*{\subsection}{0cm}{*0.2}{*0.2}
+\titlespacing*{\subsection}{0cm}{*0.8}{*0.8}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
