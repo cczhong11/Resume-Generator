@@ -1,6 +1,4 @@
 [{
     "id":"all",
-    "Programming Language":["Java","Python","C","JavaScript","SQL","Golang","Scala"],
-    "Cloud":["AWS: EC2, S3, Lambda, DynamoDB, RDS, EMR","Azure: CosmosDB, Functions, App service,Blob Storage, Event Hubs","GCP: Dataproc, Compute Engine, Kubernetes Engine, Datastore, Functions"],
-    "DataBase and Big Data":["MySQL","HBase","MongoDB","CosmosDB","Spark","Hadoop MapReduce","Kafka"]
+    "Programming Language":["Java","Python","C","JavaScript","SQL","Golang","Scala"]
 }]

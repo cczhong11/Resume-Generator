@@ -1,55 +1,42 @@
-[
-    {
+[{
         "id": "normal",
-        "name": "Twitter Analytics Web Service",
-        "date": "Feb. - May 2018",
-        "place": "Pittsburgh, PA",
+        "name": "AWS",
+        "date": "Feb. - May 2002",
+        "place": "Seattle, WA",
         "title": "Team Project",
-        "tech": [
-            "Java",
-            "Hadoop",
-            "MySQL",
-            "Spark",
-            "JMeter",
-            "AWS"
-        ],
+        "tech": [],
         "bullet": [
-            "Performed data Extracted, Transform and Load on 300 million (1TB) of raw tweet messages using Spark.",
-            "Built a RESTful web service using Undertow framework, with MySQL and HBase as back-end on AWS.",
-            "Applied load balancing strategy to handle 4 types of intensive read/write queries and achieved an average of 10,000 QPS (queries per second) in 2 hours live test, within a maximum cost of \\$0.85/h on AWS.",
-            "Optimized web service by using thread pool, refining database schema, tuning parameters on backend database. Utilized JMeter as load generator to test our web service."
+            "aaaaa",
+            "bbbbb",
+            "ccccc"
         ]
     },
     {
         "id": "normal",
-        "name": "Lucene Based Search Engine",
-        "date": "Jan. - May 2018",
-        "place": "Pittsburgh, PA",
+        "name": "Google",
+        "date": "Jan. - May 1998",
+        "place": "Mountain View, CA",
         "title": "Course Project",
         "tech": [
             "Java"
         ],
         "bullet": [
-            "Implemented a text-based search engine indexed with Lucene API on corpus of 500, 000 + documents from ClueWeb09 dataset in Java.",
-            "Developed a custom search engine with diversification, query expansion and learning to rank capability, supporting retrieval models including Ranked Boolean, BM25, and language statistic model like Indri.",
-            "Evaluated the models developed by varying parameter values, analyzed trends, ambiguities discovered from the conducted experiments."
+            "aaaaaa",
+            "bbbbbb",
+            "cccccc"
         ]
-    },{
+    }, {
         "id": "normal",
-        "name": "HayStack File System Implementation",
-        "date": "Mar. 2018 - Apr. 2018",
-        "place": "Pittsburgh, PA",
+        "name": "RobinHood",
+        "date": "Mar. 2013 - Apr. 2018",
+        "place": "Mountain View, CA",
         "title": "Course Project",
-        "tech": ["Golang","Cassandra","Redis"],
-        "bullet": ["Designed and implemented HayStack Photo File System in Facebook paper with Golang.", "Utilized Cassandra and Redis to emulate object file system in cloud virtual machine."]
-    },{
-        "id": "normal",
-        "name": "Introduction to Computer system",
-        "date": "Sept. - Dec. 2017",
-        "place": "Pittsburgh, PA",
-        "title": "Course Project",
-        "tech": ["C","web proxy"],
-        "bullet": ["Developed dynamic storage allocator in C using explicit, segregated lists and improved space utilization by reduce header in the allocator block.", "Designed a web proxy supporting HTTP/1.0 requests and implemented multi-thread to deal with multiple concurrent connections and added LRU cache to reduce the response time."]
+        "tech": [],
+        "bullet": [
+            "aaaaaa",
+            "bbbbbb",
+            "cccccc"
+        ]
     }
-    
+
 ]
